@@ -8,14 +8,9 @@ A little assignment to practice finding data, munging it, and analyzing it in a 
 
 This dataset comes from the [New York City Open Data site](https://data.cityofnewyork.us/Public-Safety/NYPD-Arrest-Data-Year-to-Date-/uip8-fykc/about_data) and is composed of data regarding arrests in New York City, across its various boroughs. Columns and data include descriptions of the crime committed, the borrough where the arrest occurred, age, race, gender, etc. The original format of the dataset was a CSV / Excel file.
 
-| ARREST_KEY | ARREST_DATE | PD_DESC                          | LAW_CAT_CD | ARREST_BORO | JURISDICTION_CODE | AGE_GROUP | PERP_SEX | PERP_RACE | X_COORD_CD,Y_COORD_CD | Latitude | Longitude | SEASON     | CRIME_TYPE |
-| ---------- | ----------- | -------------------------------- | ---------- | ----------- | ----------------- | --------- | -------- | --------- | --------------------- | -------- | --------- | ---------- | ---------- | -------- |
-| 261265483  | 01/03/2023  | "ROBBERY-OPEN AREA UNCLASSIFIED" | F          | B           | 0                 | 18-24     | M        | BLACK     | 1027430               | 251104   | 40.855793 | -73.843908 | WINTER     | PROPERTY |
-
-| First Header | Second Header |
-| ------------ | ------------- |
-| Content Cell | Content Cell  |
-| Content Cell | Content Cell  |
+| ARREST_KEY | ARREST_DATE | PD_DESC                          | LAW_CAT_CD | ARREST_BORO | JURISDICTION_CODE | AGE_GROUP | PERP_SEX | PERP_RACE | X_COORD_CD,Y_COORD_CD | Latitude  | Longitude  | SEASON | CRIME_TYPE |
+| ---------- | ----------- | -------------------------------- | ---------- | ----------- | ----------------- | --------- | -------- | --------- | --------------------- | --------- | ---------- | ------ | ---------- |
+| 261265483  | 01/03/2023  | "ROBBERY-OPEN AREA UNCLASSIFIED" | F          | B           | 0                 | 18-24     | M        | BLACK     | 1027430,251104        | 40.855793 | -73.843908 | WINTER | PROPERTY   |
 
 The dataset was surprisingly pretty clean already. The column that caused the most trouble was of the police descriptions of the crimes because there were commas in them which made splitting up the data in the CSV by commas using the `.split()` function into a list challenging. I had to replace any commas in that column with dashes so that I could proceed with the scrubbing.
 
