@@ -12,6 +12,11 @@ This dataset comes from the [New York City Open Data site](https://data.cityofne
 | ---------- | ----------- | -------------------------------- | ---------- | ----------- | ----------------- | --------- | -------- | --------- | --------------------- | -------- | --------- | ---------- | ---------- | -------- |
 | 261265483  | 01/03/2023  | "ROBBERY-OPEN AREA UNCLASSIFIED" | F          | B           | 0                 | 18-24     | M        | BLACK     | 1027430               | 251104   | 40.855793 | -73.843908 | WINTER     | PROPERTY |
 
+| First Header | Second Header |
+| ------------ | ------------- |
+| Content Cell | Content Cell  |
+| Content Cell | Content Cell  |
+
 The dataset was surprisingly pretty clean already. The column that caused the most trouble was of the police descriptions of the crimes because there were commas in them which made splitting up the data in the CSV by commas using the `.split()` function into a list challenging. I had to replace any commas in that column with dashes so that I could proceed with the scrubbing.
 
 There were also a few missing values, usually noted as `null` or `0` in my dataset. I replaced them all with the string "NaN" for consistency. Even then, there were not many missing values present in my data.
