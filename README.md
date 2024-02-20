@@ -52,3 +52,7 @@ I firstly wanted to examine the age column. The dataset already organized ages c
 Similarly, I investigated the various categories of crime based on the column that I added. I once again used the `COUNTIF` function to determine the counts for the various categories. I thus created a pie chart below to visualize the proportions of these counts. I also used `MIN` to determine the category with the lowest count which was sexual crimes, and `MAX` to determine the category with the highest count which was property crimes, which includes various forms of theft. ![Pie Chart of Crime Types](https://github.com/dbdesign-students-spring2024/3-spreadsheet-analysis-mayanesen/blob/main/pie_chart.png)
 
 Lastly, I created another analysis of categories by the season in which the crimes occured using `COUNTIF` and found the `MIN` and `MAX` of the counts as well. The season with the highest amount of crime is spring and the one with the lowest is fall. These were what I expected as seasons of extreme weather like winter and summer cause more people to stay indoors.
+
+### Extra Credit
+
+This assignment deserves extra credit because I am working with a dataset with over 227k rows. My Excel spreadsheet couldn't handle it and thus my analysis uses a portion of it.
